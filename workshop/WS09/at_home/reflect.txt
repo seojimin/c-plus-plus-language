@@ -1,0 +1,93 @@
+Name : Jimin Seo
+ID : 145803169
+E-mail : jseo22@myseneca.ca
+
+** reflection **
+1. What happens if you try to put your templated functions in Data.cpp? Does your source code compile if you move all functions to Data.h? Explain.
+
+        If the templated functions exist in Data.cpp, an error will occur while compiling the script.
+
+2. Move one templated function into ws9_lab.cpp. Does it work now? Do you need to define the template function above main(), before it is used, or can you define it below main()?
+
+        I tested to define both, but it did not work.
+
+3. Could you have done this lab without templates, by just overloading your functions in Data.h to accept integer and double arguments? What is the advantage of using templates? 
+
+        It can accept duouble overloading, but the advantge of using templates can accept another type such as long and can disappear a duplicate code.
+
+4. Are the following equivalent?
+   template<class T>
+   template<typename T>
+
+        Yes
+
+** quizz reflection **
+1. (1) Which polymorphism perfects the separation of interfaces from implementation?
+
+-Template
+
+
+ 2. (1) What is a concrete class? 
+
+-Concrete class is a derived class that implements that interface.
+
+
+3. (1) _______________class inherits a pure virtual function which doesn’t provide an implementation for functions. 
+
+-abstract class
+
+
+4. (1) A pure virtual member function has multiple definitions within its hierarchy and each definition has the different signatures with the same meaning. 
+
+-true 
+
+
+5. (1) In ______________ polymorphism the type and the logic executed on that type are independent of one another. 
+
+-Parametric 
+
+
+6. (1) Define the signature of the pure virtual function in C++. (function name is print). 
+
+- virtual void print() = 0;
+
+
+
+7. (1) An interface in C++ is an abstract base class with no data members.
+
+ -true 
+
+
+8. (1) How does static cast conversion (static_cast(minutes)/ 60;) support in C++? 
+
+a. It rejects conversions between pointer and non-pointer types. 
+
+
+9. (2) Identify the type of template for the following given codes (a) and (b) and write the answer in each blank.
+
+
+ (a) ____________int (The template for all functions that swap values in this way follows from replacing the specific type int with the type variable T and inserting the template header)____________________________ 
+
+template void swap(T& a, T& b) { 
+
+T c;
+
+ c = a;
+
+ a = b; 
+
+b = c; } 
+
+
+(b) ____Array classes of specified size in static memory. The template parameters are the type (T) of each element in the array and the number of elements in the array (N)._____________________________________ 
+
+template class Array { 
+
+T a[N]; 
+
+public: 
+
+T& operator[](int i) { return a[i]; } 
+
+};
+

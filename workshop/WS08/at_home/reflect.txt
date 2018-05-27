@@ -1,0 +1,32 @@
+name : jimin Seo
+ID no : 145803169
+E-mail : jseo22@myseneca.com
+
+**relect**
+1.	What is the difference between an abstract base class and a concrete class?
+A concrete class can create object, but abstract base class cannot create object
+
+2.	Identify the functions that shadow functions of the same name in your solution?
+credit(double ve), debit(double ve), monthEnd(), display(std::ostream& os)
+
+3.	Explain what have you learned in this workshop.
+I learned about how to define a pure virtual function and code an abstract base class. Additionally, I can understand why I need pure virtual function using C++
+we need to use it to make the code more efficient and readability. I believe almost every new syntax for C++ has the same reason. 
+If we do not use virtual function, we should write more code for the same result. 
+
+**quiz reflect**
+1  What is the output of the following program?
+ #include class A { public: virtual void display() const { std::cout << ‘A’; } }; class B : public A { public: virtual void display() const { std::cout << ‘B’; } }; void display(const A a) { a.display(); } void show(const A& a) { a.display(); display(a); } int main() { A* a = nullptr; A = new B(); show(*a); delete a; A = new A(); show(*a); delete a; std::cout << std::endl; }
+ ___________BAAA_____________
+
+ 2 (1) Identify the static type in the above program. ____
+___class A__________ 
+
+3. (1) C++ implements polymorphic objects using _pointer___ syntax 
+
+4. (2) Name the two types of binding available for member functions of a C++ class? ________Ealry binding_______ _______dynamic dispatch_________ 
+
+5. (1) Declare a pure virtual function called foo that receives an int and returns an int: ____virtual int foo(int a) = 0;__
+
+ 6. (1) We can create instances (that is, objects) of the following kinds of classes. Circle all that apply: 
+Concrete

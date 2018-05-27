@@ -1,0 +1,35 @@
+Name : Jimin Seo  
+Seneca email : jseo22@myseneca.ca
+Student number: 145803169
+
+W3
+
+1. How many elements are there in each c-style character string that stores a family or given name for the account? why? 
+
+The size of each C-style character string that stores a family or given name for the account is 41, because the last character is the end of string ('0') null character. A C-style string is essentially an array of character with the special character null at the end. This character is required, so we must take it into account.
+
+2. Your class declares two member functions named set(…). In C, this would generate an error. Name the feature of C++ that allows this.
+
+Because, this is called function overloading that C++ language allows you to specify more than one definition for a function name in the same scope. When you call an overloaded function , the compiler determines the most appropriate definition to use, by comparing the argument types in the function call to the parameters types in the definition.
+
+3. What have you learned during this workshop?
+I learned about to define a class type and how to use a class definition with private data members and public member function through this workshop. Also, how can access data within an object of class type through
+public member function and can use standard library facilities to format data inserted into the output stream.
+
+Quix 2 reflection section
+
+5 (1) The width() member function of the ostream class applies to (check one of the following):
+- The next field only
+6 (3) Add the statement(s) that displays the number e to 4 decimal places on standard output
+
+#include <iostream>
+
+int main() {
+
+double e = 2.71828182845;
+
+std::precision(4);
+
+std::cout << e << std::endl;
+
+}

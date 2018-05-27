@@ -1,0 +1,6 @@
+﻿  w2_in_lab.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\crtdefs.h(10): fatal error C1083: Cannot open include file: 'corecrt.h': No such file or directory
+  Kingdom.cpp
+c:\users\jimin\downloads\oop\ws02\in-lab\kingdom.cpp(7): warning C4616: #pragma warning: warning number '1083' not a valid compiler warning
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\crtdefs.h(10): fatal error C1083: Cannot open include file: 'corecrt.h': No such file or directory
+  Generating Code...

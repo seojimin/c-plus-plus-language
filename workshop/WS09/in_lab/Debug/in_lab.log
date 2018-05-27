@@ -1,0 +1,10 @@
+﻿  ws9_lab.cpp
+  Data.cpp
+c:\users\jimin\downloads\oop\ws09\in_lab\data.h(94): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  c:\users\jimin\downloads\oop\ws09\in_lab\data.cpp(74): note: see reference to function template instantiation 'bool sict::read<int>(std::istream &,T *,int)' being compiled
+          with
+          [
+              T=int
+          ]
+  Generating Code...
+  in_lab.vcxproj -> C:\Users\jimin\Downloads\OOP\WS09\in_lab\Debug\in_lab.exe

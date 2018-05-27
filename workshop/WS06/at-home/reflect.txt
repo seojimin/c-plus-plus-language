@@ -1,0 +1,58 @@
+Name : Jimin Seo
+ID no : 145803169
+E-mail : jseo22@myseneca.ca
+
+Reflection section
+
+1)	Why does the copy assignment operator check for self-assignment before doing anything else?
+Because the self object's value should not be changed.
+2)	List how you avoided duplication of code.
+We can make a new function of repeated code to avoid duplication.
+3)	List what you have learned in completing this workshop.
+ learned about how to make a copy object through the copy constructor and assignment operator.
+
+Quiz reflection 
+
+1 (3) Identify the prototypes for the special member functions that need to be defined in a class named
+OOP244 if that class accesses resources:
+a) OOP244& operator=(const OOP244&);
+b) OOP244(const OOP244&);
+c) ~OOP244();
+
+2 (1) How would you declare a data member named student in a class named OOP244 that accesses
+dynamically allocated memory for an array of Student objects?
+Char* name;
+
+3 (2) Write the code snippet that sets an OOP244 object to a safe empty state in a constructor that
+validates data received through its parameters and find that data to be invalid:
+
+#include “OOP244.h”
+OOP244::OOP244() {
+// sets a safe empty state
+number = 0;
+grade = nullptr;
+}
+
+OOP244::OOP244( …, …, …) {
+bool valid = …;
+If ( valid ) {
+// stores valid data in the object
+number = data;
+grade = data2;
+}
+else { // add the code here to store a safe empty state
+grade = nullptr;
+*this = OOP244();
+}
+}
+
+4 (1) Write a statement that performs a self-assignment
+a) Type & operator=(const Type&);
+
+5 (1) Which keyword prohibits the copying or assignment of an object?
+a) = delete
+
+6(2) Identify two instructions that need to be coded in the logic of an assignment operator for a class
+that accesses resources
+a) private member function 
+b) direct call

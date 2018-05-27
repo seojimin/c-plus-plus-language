@@ -1,0 +1,20 @@
+name: Jimin Seo
+Student id : 145803169
+Email: jseo22@myseneca.ca
+
+1.What is a namespace? Explain its purpose.
+'namespace' is used to avoid name duplication as much as possible. Variables can also be declared, and most code, such as functions, structures, and classes, can be written. For instance, when two different programmers would use the same name for two different classes and functions, a namespace is a way to deal with this problem.
+
+2.Why are header files needed? Explain.
+Firtst, compile time is speeded up. If we do not seperate header files from the other files, it has to be done whole files whenever programmer change single codes. 
+Second, programmers can share interfaces without the code.   
+
+3.In the instructions above, you were directed to compile only .cpp files but not the .h files. Explain why you should never compile header files.
+We do not have to compile header files independently. Header files are made to be included into implementation files, not fed to the compiler as independent translation units. Since a typical header file usually contains only declarations that can be safely repeated in each translation unit, it is perfectly expected that "compiling" a header file will have no harmful consequences. But at the same time it will not achieve anything useful.
+
+4.Explain why you should never include .cpp files in another file.
+If I include .cpp files, it will be error. Because, the file define two times (function duplication). 
+
+5.Explain in your own words what have you learned on this workshop.
+I learned about how can divide interface and implemenntation. Also, I will be able to share my code when I want to use the file.       
+

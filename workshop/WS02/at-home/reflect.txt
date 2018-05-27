@@ -1,0 +1,22 @@
+Reflection section
+
+1. Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+    If I want to increase the size of an existing array of dynamically allocated memory, I need to allocate new dynamic memory.
+   Because, the size of an exising array of dynamically allocated momory can not increase, so we need to allocate new dynamic memory and then
+   move the existing array of dynamically allocated memory to new dynamic memory.
+   Also, I need to delete the exising dynamic memory, and point toward new dynamic memory.
+
+2. The Kingdom structure stores the name in an array of characters. At the end of the program,
+   we do not use the delete operator to deallocate the memory occupied by the name. Do we have a memory leak there? Explain.
+    This value is static, so we do not use the delete operator and we do not have a memory leak. A Static variable goes out of scope its
+   memory becomes available for newly defined variables. The lifetime of each local variable disappear at the closing brace of the code block.
+
+3. There are two display(...) functions. How does the compiler know which one should be called from your main function?
+    C++ aloC++ allows you to specify more than one definition for a function name or an operator in the same scope,
+   which is called function overloading and operator overloading respectively. When you call an overloaded function or operator,
+   the compiler determines the most appropriate definition to use, by comparing the argument types you have used to call the function or
+   operator with the parameter types specified in the definitions. The process of selecting the most appropriate overloaded function or
+   operator is called overload resolution.
+
+4. Explain what have you have learned in this workshop.
+    I learnd about how to use a namespace and allocating dynamic memory through this workshop.

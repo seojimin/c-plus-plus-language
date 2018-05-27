@@ -1,0 +1,42 @@
+Jimin Seo 145803169
+jseo22@myseneca.com
+
+W4
+1. What is a safe empty state? Could you define another state as the safe empty state?
+There is specific status that should be defined and can distinguish if the object's value is invalid or not. Therefore, normally we can initialize member variables as safe empty state values in a constructor. And, we can define another state as the safe empty state. We can set another safe empty state using member variables.
+
+2. Describe how you have minimized code duplication.
+Making function make code minimized duplication. Functions can be re-used.
+
+3. Explain why the canTravelWith(...) member function can access the private data of the object referenced in its parameter. 
+Because each object in the same class can access the private member variables of the other objects. In this workshop, different objects but the same Passenger class, so they can access each other's private member variables directly.
+
+4. What statement do you need to add to ensure that the strncpy(...) function executes correctly?
+In order to execute correctly the strncpy(...) function, we need pointer to the character array to copy to destination, pointer to the byte string to copy from source and maximum number of characters to copy, but it does not guarantee null terminate the buffer, so strncpy(...) function appends the null pointer to end of string.
+
+        For example,
+
+        char dest[5];
+        strncpy(dest, "This is a string", sizeof(dest));
+        dest[sizeof(dest)-1] = '\0';
+
+5. Explain what you have learned in this workshop.
+I learned to define a constructor that initializes an object's data at creation time and to define a default constructor that, sets an object to a safe empty state. Also, I learned about how can I use the private member variables in the same class.
+
+Quiz 
+1. Do you specify a return tyoe in a constructor declaration?(anwer: either true or false)
+   -False.
+
+5. if you do not declare any constructor does the compiler insert a dummy constructoe(answer: either true or false) 
+   -True.
+
+6. The follwing definition returns an unmodifiable reference to the current object. Complete the code
+   const OOP244& OOP244::foo() const{
+   	//…member function logic
+   	return *this;
+   }
+7. How does a constructor make your program less vulnerable?
+C++ can provide constructors to initialize themselves. otherwise, garbage value could be found.
+
+
+
